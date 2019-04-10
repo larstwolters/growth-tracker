@@ -11,7 +11,9 @@
     );
     $statement->execute();
 
-    while ($data = $statement->fetch()) {
+        for ($x = 0; $x <= $_SESSION['STAGE']; $x++) {
+            $data = $statement->fetch();
+        }
 
         $skillName = $data['skill'];
         $skillId = $data['ID'];
@@ -20,8 +22,11 @@
         $level3 = $data['level3'];
         $level4 = $data['level4'];
 
+
+
         echo
             '
+         '.$_SESSION["STAGE"].'
         <b>'.$skillName.'</b>
         <br>
         <br>
@@ -40,5 +45,3 @@
         <br>
         <br>
     ';
-
-    }

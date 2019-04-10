@@ -1,5 +1,11 @@
 <?php
 
+    session_start();
+
+        if (!isset($_SESSION["STAGE"])) {
+            $_SESSION["STAGE"] = 0;
+        }
+
     /**
      * @package
      * Statische bestanden die we altijd importeren
