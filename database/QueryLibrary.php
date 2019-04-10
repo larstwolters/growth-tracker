@@ -22,5 +22,15 @@
             return $query;
         }
 
+        /**
+         * @param $skill
+         * De skill die je wilt updaten
+         * @return string
+         */
+        function updateSkillLevel($skill) {
+            $query = "UPDATE users SET $skill = :skillLevel";
+            return $query;
+        }
+
     }
 

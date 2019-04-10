@@ -14,6 +14,7 @@
     while ($data = $statement->fetch()) {
 
         $skillName = $data['skill'];
+        $skillId = $data['ID'];
         $level1 = $data['level1'];
         $level2 = $data['level2'];
         $level3 = $data['level3'];
@@ -31,15 +32,13 @@
             '.$level4.' <br><br>
        </li>
         <form>
-            <input type="text" name="levelChoice">
-            <button name="setLevel" type="submit">Next</button>
+            <a href="components/updateSkillLevel.php?levelChoice=1&skill='.$skillId.'">Level 1</a>
+            <a href="components/updateSkillLevel.php?levelChoice=2&skill='.$skillId.'">Level 2</a>
+            <a href="components/updateSkillLevel.php?levelChoice=3&skill='.$skillId.'">Level 3</a>
+            <a href="components/updateSkillLevel.php?levelChoice=4&skill='.$skillId.'">Level 4</a>
         </form>
         <br>
         <br>
     ';
 
-    }
-
-    if (isset($_GET['setLevel'])) {
-        echo 'Je hebt gekozen voor level: ' . $_GET['levelChoice'] . ' voor skill ' . $skillName;
     }
