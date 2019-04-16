@@ -2,9 +2,9 @@
 
     /**
      * @var $queryObject
-     * we maken een nieuwe instantie van het QueryLibrary object
+     * we maken een nieuwe instantie van het FunctionHandler object
      */
-    $queryObject = new QueryLibrary();
+    $queryObject = new FunctionHandler();
 
     $statement = $pdo->prepare(
         $queryObject->getAllData()
@@ -22,26 +22,52 @@
         $level3 = $data['level3'];
         $level4 = $data['level4'];
 
-
-
         echo
             '
-         '.$_SESSION["STAGE"].'
-        <b>'.$skillName.'</b>
-        <br>
-        <br>
-        <li>
-            '.$level1.' <br><br>
-            '.$level2.' <br><br>
-            '.$level3.' <br><br>
-            '.$level4.' <br><br>
-       </li>
-        <form>
-            <a href="components/updateSkillLevel.php?levelChoice=1&skill='.$skillId.'">Level 1</a>
-            <a href="components/updateSkillLevel.php?levelChoice=2&skill='.$skillId.'">Level 2</a>
-            <a href="components/updateSkillLevel.php?levelChoice=3&skill='.$skillId.'">Level 3</a>
-            <a href="components/updateSkillLevel.php?levelChoice=4&skill='.$skillId.'">Level 4</a>
-        </form>
-        <br>
-        <br>
+                <!-- Basic elements -->
+                <h2 class="display-4 mb-3 mt-a">
+                    <span class="text-white font-weight-600">'.$skillName.'</span>
+                </h2>
+                <div class="card-deck mt-xl-5">
+                    <div class="card bg-blue">
+                        <a href="components/UpdateLevel.php?levelChoice=1&skill='.$skillId.'">
+                          <div class="card-body">
+                          <p class="card-text text-light font-weight-200">Onvoldoende</p>
+                            <p class="card-text text-white">
+                            '. $level1 .'
+                            </p>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="card bg-blue">
+                        <a href="components/UpdateLevel.php?levelChoice=1&skill='.$skillId.'">
+                          <div class="card-body">
+                          <p class="card-text text-light font-weight-200">Redelijk</p>
+                            <p class="card-text text-white">
+                            '. $level2 .'
+                            </p>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="card bg-blue">
+                        <a href="components/UpdateLevel.php?levelChoice=1&skill='.$skillId.'">
+                          <div class="card-body">
+                          <p class="card-text text-light font-weight-200">Goed</p>
+                            <p class="card-text text-white">
+                            '. $level3 .'
+                            </p>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="card bg-blue">
+                        <a href="components/UpdateLevel.php?levelChoice=1&skill='.$skillId.'">
+                          <div class="card-body">
+                          <p class="card-text text-light font-weight-200">Uitstekend</p>
+                            <p class="card-text text-white">
+                            '. $level4 .'
+                            </p>
+                          </div>
+                        </a>
+                    </div>
+                </div>
     ';
