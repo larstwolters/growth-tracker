@@ -213,7 +213,7 @@ a
 {
     text-decoration: none;
 
-    color: #111;
+    color: #fff;
     background-color: transparent;
 
     -webkit-text-decoration-skip: objects;
@@ -222,7 +222,6 @@ a:hover
 {
     text-decoration: none; 
 
-    color: #233dd2;
 }
 
 a:not([href]):not([tabindex])
@@ -2898,7 +2897,7 @@ textarea.form-control
     font-size: 1rem;
     font-weight: 600;
     line-height: 1.5;
-
+    color:#fff;
     display: inline-block;
 
     padding: .625rem 1.25rem;
@@ -3042,16 +3041,16 @@ fieldset:disabled a.btn
 
 .btn-success
 {
-    color: #fff;
-    border-color: #2dce89;
-    background-color: #2dce89;
+    color: #fff !important;
+    border-color: #0083ff;
+    background-color: #0083ff;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
 }
 .btn-success:hover
 {
     color: #fff;
-    border-color: #2dce89; 
-    background-color: #2dce89;
+    border-color: #0083ff;
+    background-color: #0083ff;
 }
 .btn-success:focus,
 .btn-success.focus
@@ -3062,16 +3061,16 @@ fieldset:disabled a.btn
 .btn-success:disabled
 {
     color: #fff;
-    border-color: #2dce89; 
-    background-color: #2dce89;
+    border-color: #0083ff;
+    background-color: #0083ff;
 }
 .btn-success:not(:disabled):not(.disabled):active,
 .btn-success:not(:disabled):not(.disabled).active,
 .show > .btn-success.dropdown-toggle
 {
     color: #fff;
-    border-color: #2dce89; 
-    background-color: #24a46d;
+    border-color: #0083ff;
+    background-color: #0083ff;
 }
 .btn-success:not(:disabled):not(.disabled):active:focus,
 .btn-success:not(:disabled):not(.disabled).active:focus,
@@ -14268,7 +14267,6 @@ button.section-darker:focus
 
     transition: all .15s ease;
     letter-spacing: .025em;
-    text-transform: uppercase;
 
     will-change: transform;
 }

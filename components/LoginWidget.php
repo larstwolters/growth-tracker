@@ -15,8 +15,8 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <button type="submit" name="login" class="btn btn-dashboard mt-4">Log in</button>
-                   <a class="btn btn-dashboard mt-4" href="register.php">Registreren</a>
+                    <button type="submit" name="login" class="btn btn-success mt-4">Log in</button>
+                   <a class="btn btn-success mt-4" href="register.php">Registreren</a>
                 </div>
             </form>
         ';

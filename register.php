@@ -32,13 +32,13 @@ require_once "database/FunctionHandler.php";
     <link type="text/css" href="./assets/css/docs.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-white">
+<body class="bg-ui">
 <div class="main-content pt-7 py-lg-8">
-    <div class="container mt-4 pb-5">
+    <div class="container mt-4 pb-5 pt-150">
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-8">
                 <div class="text-center text-muted mb-4">
-                    <h1 class="text-darker display-3 font-weight-800 text-center mb-4">Account aanmaken</h1>
+                    <h1 class="text-white display-3 font-weight-thin text-center mb-4">Account aanmaken</h1>
                 </div>
                 <?php require_once 'components/RegisterWidget.php' ?>
             </div>

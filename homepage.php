@@ -1,3 +1,22 @@
+<?php
+
+session_start();
+
+/**
+ * @package
+ * Statische bestanden die we altijd importeren
+ */
+
+require_once "database/DatabaseConnection.php";
+require_once "database/FunctionHandler.php";
+
+if (!isset($_SESSION["email"])) {
+    redirectPage('login.php');
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -21,27 +40,29 @@
 </head>
 
 <body class="bg-ui">
-<div class="main-content">
-    <div class="header pb-8">
-        <div class="container">
-            <div class="col-sm-6">
-                <h1 class="homepage-letter">Welkom!</h1>
-                <button type="button" class="btn btn-light"><?php if (true){echo'<a href="index.php">Rubriek starten</a>';}?></button>
+    <div class="main-content">
+        <div class="header pb-8">
+            <div class="container pt-5">
+                <div class="col-sm-6 center">
+                    <h1 class="display-4 text-white">Welkom, <?php echo $_SESSION['name']; ?></h1>
+                    <p class="text-lead">Er staat een rubric open.</p>
+                    <button type="button" class="btn btn-success"><?php if (true){echo'<a href="index.php">Rubriek starten</a>';}?></button>
+                    <a href="components/LogOut.php"><button type="button" class="btn btn-success">Uitloggen</button></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Core -->
-<script src="./assets/vendor/jquery/jquery.min.js"></script>
-<script src="./assets/vendor/popper/popper.min.js"></script>
-<script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
-<script src="./assets/vendor/headroom/headroom.min.js"></script>
-<!-- Optional JS -->
-<script src="./assets/vendor/onscreen/onscreen.min.js"></script>
-<script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
-<script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-<!-- Argon JS -->
-<script src="./assets/js/argon.js?v=1.0.1"></script>
+    <!-- Core -->
+    <script src="./assets/vendor/jquery/jquery.min.js"></script>
+    <script src="./assets/vendor/popper/popper.min.js"></script>
+    <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="./assets/vendor/headroom/headroom.min.js"></script>
+    <!-- Optional JS -->
+    <script src="./assets/vendor/onscreen/onscreen.min.js"></script>
+    <script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
+    <script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <!-- Argon JS -->
+    <script src="./assets/js/argon.js?v=1.0.1"></script>
 </body>
 
 </html>

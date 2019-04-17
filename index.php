@@ -14,6 +14,11 @@ if (!isset($_SESSION["STAGE"])) {
 require_once "database/DatabaseConnection.php";
 require_once "database/FunctionHandler.php";
 
+
+if (!isset($_SESSION["email"])) {
+    redirectPage('login.php');
+}
+
 ?>
 
 
@@ -40,15 +45,16 @@ require_once "database/FunctionHandler.php";
 </head>
 
 <body class="bg-ui">
-<div class="main-content">
-    <div class="header pb-8">
-    <div class="container">
-        <div class="row">
-        <?php include_once "components/Rubric.php" ?>
+    <div class="main-content">
+        <div class="header pb-8">
+            <div class="container">
+                <div class="row">
+                    <?php include_once "components/Rubric.php" ?>
+                    <a class="btn btn-success mt-4" href="homepage.php">Terug naar overzicht</a>
+                </div>
+            </div>
         </div>
     </div>
-    </div>
-</div>
     <!-- Core -->
     <script src="./assets/vendor/jquery/jquery.min.js"></script>
     <script src="./assets/vendor/popper/popper.min.js"></script>

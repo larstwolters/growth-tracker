@@ -21,8 +21,7 @@
             </div>
             
             <div class="text-center">
-                    <button type="submit" name="register" class="btn btn-dashboard mt-4">Account maken</button>
-                    <a class="btn btn-dashboard mt-4" href="login.php">Login</a>
+                    <button type="submit" name="register" class="btn btn-success mt-4">Account maken</button>
             </div>
         </form>
     ';

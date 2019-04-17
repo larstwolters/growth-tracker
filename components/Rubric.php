@@ -40,7 +40,7 @@
                         </a>
                     </div>
                     <div class="card bg-blue">
-                        <a href="components/UpdateLevel.php?levelChoice=1&skill='.$skillId.'">
+                        <a href="components/UpdateLevel.php?levelChoice=2&skill='.$skillId.'">
                           <div class="card-body">
                           <p class="card-text text-light font-weight-200">Redelijk</p>
                             <p class="card-text text-white">
@@ -50,7 +50,7 @@
                         </a>
                     </div>
                     <div class="card bg-blue">
-                        <a href="components/UpdateLevel.php?levelChoice=1&skill='.$skillId.'">
+                        <a href="components/UpdateLevel.php?levelChoice=3&skill='.$skillId.'">
                           <div class="card-body">
                           <p class="card-text text-light font-weight-200">Goed</p>
                             <p class="card-text text-white">
@@ -60,7 +60,7 @@
                         </a>
                     </div>
                     <div class="card bg-blue">
-                        <a href="components/UpdateLevel.php?levelChoice=1&skill='.$skillId.'">
+                        <a href="components/UpdateLevel.php?levelChoice=4&skill='.$skillId.'">
                           <div class="card-body">
                           <p class="card-text text-light font-weight-200">Uitstekend</p>
                             <p class="card-text text-white">
