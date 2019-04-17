@@ -15,7 +15,8 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <button type="submit" name="login" class="btn btn-dashboard mt-1 col-12">Log in</button>
+                    <button type="submit" name="login" class="btn btn-dashboard mt-4">Log in</button>
+                   <a class="btn btn-dashboard mt-4" href="register.php">Registreren</a>
                 </div>
             </form>
         ';
@@ -40,8 +41,9 @@ if (isset($_POST["login"]) && isset($_REQUEST["email"]) && isset($_REQUEST["pass
         $_SESSION['name'] = $dataFetch['user_name'];
         $_SESSION['email'] = $email;
         $_SESSION["STAGE"] = 0;
-        redirectPage("index.php");
+        redirectPage("homepage.php");
     } else {
         $message = "Je hebt verkeerde gegevens ingevoerd. Probeer opnieuw.";
+        echo $message;
     }
 }

@@ -19,9 +19,10 @@
                     <input name="password" class="form-control" placeholder="Wachtwoord" type="password">
                 </div>
             </div>
-            <a href="login.php">Inloggen</a>
+            
             <div class="text-center">
-                <button type="submit" name="register" class="btn btn-dashboard mt-4">Account maken</button>
+                    <button type="submit" name="register" class="btn btn-dashboard mt-4">Account maken</button>
+                    <a class="btn btn-dashboard mt-4" href="login.php">Login</a>
             </div>
         </form>
     ';
