@@ -10,6 +10,7 @@ if (!isset($_SESSION["STAGE"])) {
  * @package
  * Statische bestanden die we altijd importeren
  */
+
 require_once "database/DatabaseConnection.php";
 require_once "database/FunctionHandler.php";
 

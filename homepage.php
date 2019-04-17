@@ -1,15 +1,3 @@
-
-<?php
-
-/**
- * @package
- * Statische bestanden die we altijd importeren
- */
-require_once "database/DatabaseConnection.php";
-require_once "database/FunctionHandler.php";
-
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -32,20 +20,28 @@ require_once "database/FunctionHandler.php";
     <link type="text/css" href="./assets/css/docs.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-white">
-<div class="main-content pt-7 py-lg-8">
-    <div class="container mt-4 pb-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-8">
-                <div class="text-center text-muted mb-4">
-                    <h1 class="text-darker display-3 font-weight-800 text-center mb-4">Account aanmaken</h1>
-                </div>
-                <?php require_once 'components/RegisterWidget.php' ?>
+<body class="bg-ui">
+<div class="main-content">
+    <div class="header pb-8">
+        <div class="container">
+            <div class="col-sm-6">
+                <h1 class="homepage-letter">Welkom!</h1>
+                <button type="button" class="btn btn-light"><?php if (true){echo'<a href="index.php">Rubriek starten</a>';}?></button>
             </div>
         </div>
     </div>
 </div>
-
+<!-- Core -->
+<script src="./assets/vendor/jquery/jquery.min.js"></script>
+<script src="./assets/vendor/popper/popper.min.js"></script>
+<script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="./assets/vendor/headroom/headroom.min.js"></script>
+<!-- Optional JS -->
+<script src="./assets/vendor/onscreen/onscreen.min.js"></script>
+<script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
+<script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<!-- Argon JS -->
+<script src="./assets/js/argon.js?v=1.0.1"></script>
 </body>
 
 </html>

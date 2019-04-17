@@ -24,5 +24,5 @@
     header('Location: ../index.php');
 
     } else {
-        echo 'Einde van de rubric.';
+        redirectPage("../homepage.php");;
     }

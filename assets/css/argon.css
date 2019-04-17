@@ -880,7 +880,6 @@ pre code
     flex-basis: 0;
     flex-grow: 1;
 }
-
 .col-auto
 {
     width: auto;
@@ -926,7 +925,7 @@ pre code
 
 .col-6
 {
-    max-width: 50%; 
+    max-width: 50%;
 
     flex: 0 0 50%;
 }
@@ -1151,8 +1150,8 @@ pre code
     }
     .col-sm-6
     {
-        max-width: 50%; 
-
+        max-width: 50%;
+        margin-top: 50px;
         flex: 0 0 50%;
     }
     .col-sm-7
@@ -12811,7 +12810,9 @@ main
 
     opacity: 1;
 }
-
+.bg{
+    background-image: url("https://static1.squarespace.com/static/5b55aaf770e802c539804397/t/5bb49a574192028ea0c6249a/1538562670880/2%402x.png?format=2500w");
+}
 .bg-darkness
 {
     background-color: #111 !important;
@@ -18788,4 +18789,7 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
 {
     right: 10px;
     left: auto;
+}
+
+.btn-light{
 }
