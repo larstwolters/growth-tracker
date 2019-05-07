@@ -2,8 +2,14 @@
 
 session_start();
 
+require_once "database/FunctionHandler.php";
+
 if (!isset($_SESSION["STAGE"])) {
     $_SESSION["STAGE"] = 0;
+}
+
+if ($_SESSION['STAGE'] > 7) {
+    redirectPage("homepage.php");
 }
 
 /**

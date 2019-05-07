@@ -5,8 +5,6 @@
     require_once "../database/DatabaseConnection.php";
     require_once "../database/FunctionHandler.php";
 
-    if ($_SESSION['STAGE'] < 7) {
-
     $skill = $_GET['skill'];
     $levelChosen = $_GET['levelChoice'];
 
@@ -22,7 +20,3 @@
     $statement->execute();
 
     header('Location: ../index.php');
-
-    } else {
-        redirectPage("../homepage.php");;
-    }
